@@ -25,7 +25,7 @@ bl_info = {
 }
 
 
-class Test_OT_Operator(bpy.types.Operator):
+class TestOtOperator(bpy.types.Operator):
     bl_idname = "view3d.cursor_center"
     bl_label = "Simple operator"
     bl_description = "Center 3d cursor"
@@ -35,7 +35,7 @@ class Test_OT_Operator(bpy.types.Operator):
         return {'FINISHED'}
 
 
-class Test_PT_Panel(bpy.types.Panel):
+class TestPtPanel(bpy.types.Panel):
     bl_idname = "Test_PT_Panel"
     bl_label = "Test Panel"
     bl_category = "Test Addon"

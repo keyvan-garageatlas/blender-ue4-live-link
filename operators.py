@@ -11,20 +11,13 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 import bpy
-from . import operators
-from . import panels
 
 
-bl_info = {
-    "name": "Unreal Engine 4 Live Link",
-    "author": "Tom Delaney",
-    "description": "",
-    "blender": (2, 80, 0),
-    "version": (0, 0, 1),
-    "location": "",
-    "warning": "",
-    "category": "Animation"
-}
+class TestOtOperator(bpy.types.Operator):
+    bl_idname = "view3d.cursor_center"
+    bl_label = "Simple operator"
+    bl_description = "Center 3d cursor"
 
-classes = (operators.TestOtOperator, panels.TestPtPanel)
-register, unregister = bpy.utils.register_classes_factory(classes)
+    def execute(self, context):
+        bpy.ops.view3d.snap_cursor_to_center()
+        return {'FINISHED'}

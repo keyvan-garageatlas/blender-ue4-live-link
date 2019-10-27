@@ -11,20 +11,20 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 import bpy
-from . import operators
-from . import panels
 
 
-bl_info = {
-    "name": "Unreal Engine 4 Live Link",
-    "author": "Tom Delaney",
-    "description": "",
-    "blender": (2, 80, 0),
-    "version": (0, 0, 1),
-    "location": "",
-    "warning": "",
-    "category": "Animation"
-}
+class TestPtPanel(bpy.types.Panel):
+    bl_idname = "Test_PT_Panel"
+    bl_label = "Test Panel"
+    bl_category = "Test Addon"
+    bl_space_type = "VIEW_3D"
+    bl_region_type = "UI"
 
-classes = (operators.TestOtOperator, panels.TestPtPanel)
-register, unregister = bpy.utils.register_classes_factory(classes)
+    def add(self, firstNum, secondNum):
+        return firstNum + secondNum
+
+    def draw(self, context):
+        layout = self.layout
+
+        row = layout.row()
+        row.operator('view3d.cursor_center', text="Center 3D cursor")

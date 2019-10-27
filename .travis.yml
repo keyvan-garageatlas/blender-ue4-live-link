@@ -9,5 +9,5 @@ addons:
       secure: "mdSmTZdw3hI1KAt86pL2K1FPxxan7bjEp+HATGgNsJYndxrqgk4DAzJXwBy+K/7BHrbCexLqfw/UhCMA41r9f/3KvxQ1dJhregBiQhP21vHlrt8EIRj5zLTii89PlEv7XoHkUBS9XFCDEJ0mdVcgGcfVFypjq6uQ/KRDWlS0MmcS3FP4hCmyCdgtiZkTnxMf32DGA9Hr4yvi91P8f5QRstJIfekpm6wqX/+g6yKAyzYPiyHGL4uhr8SAO32hRNR8E5RkSTx+W3Zs4HLL2NZGO+D6uhOy7KHSdBMAsv39hpxePBdWLKTawwRG88VRRp6BsD9X9LIbKfCMITh6T93mVHwPcL/48UauL+b4lGcJqJDWDRXJFrehPAdewsQbfl/YeCHg+KjMb//tGxUarEBY2uK3sm2iSW8cxkn2Ese+SjJ/cYJoByhSzPkQdVQb+NdPmGYVRozGG185Iof9uFA/38onHm34cMs4gjJvSE4eM//Ll3qDJ0gcTZxUQ+jHdCLurw1iFMYfQWhtCQza+i0o7nvh3llxUHeIA0ELSj0LSKpgkg9IAwIddcoxQD0BNnlxd+aAtB2bwo8+zXgS0dwsh570qUc9ZAi1dj7e+7EuRXoVIIXeQs3BLF7/T6OTEv+g6pxTfCQBcGfT4BZZpj0Zh/qN7R8K4ZPA4C/BYs07uCk="
 
 script:
-  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - py3clean .
   - sonar-scanner

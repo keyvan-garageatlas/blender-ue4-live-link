@@ -12,18 +12,20 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 bl_info = {
-    "name" : "Unreal Engine 4 Live Link",
-    "author" : "Tom Delaney",
-    "description" : "",
-    "blender" : (2, 80, 0),
-    "version" : (0, 0, 1),
-    "location" : "",
-    "warning" : "",
-    "category" : "Animation"
+    "name": "Unreal Engine 4 Live Link",
+    "author": "Tom Delaney",
+    "description": "",
+    "blender": (2, 80, 0),
+    "version": (0, 0, 1),
+    "location": "",
+    "warning": "",
+    "category": "Animation"
 }
+
 
 def register():
     ...
+
 
 def unregister():
     ...

@@ -1,5 +1,5 @@
 {
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": true,
-    "python.pythonPath": "/home/tomd/.pyenv/versions/3.6.6/bin/python"
+    "python.pythonPath": "~/.pyenv/versions/3.6.6/bin/python"
 }
